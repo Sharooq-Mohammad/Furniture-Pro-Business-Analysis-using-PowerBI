@@ -1,0 +1,101 @@
+Power BI offers several components and functionalities that can be particularly beneficial for non-profit organizations in their data analysis and reporting needs. Let's explore the different components and their functionalities in the context of non-profit organizations:
+
+  Power BI Desktop: Power BI Desktop provides non-profit organizations with a powerful tool to connect, transform, and visualize their data. It allows you to consolidate data from various sources such as fundraising platforms, donor databases, volunteer management systems, and financial systems. With Power BI Desktop, you can create interactive dashboards and reports to gain insights into donation trends, fundraising effectiveness, program impact, and other key metrics specific to your organization's mission. 
+
+  Power BI Service (Power BI Online): Power BI Service is a cloud-based platform that enables non-profit organizations to share and collaborate on reports and dashboards. It allows you to publish your Power BI reports securely and share them with stakeholders such as board members, donors, and volunteers. Power BI Service also provides the ability to schedule data refresh, ensuring that your reports are always up to date. Additionally, you can use features like Q&A to allow stakeholders to ask natural language questions about your data and receive instant answers.
+
+  Power BI Mobile: Power BI Mobile allows non-profit professionals to access their reports and dashboards on mobile devices while on the go. This can be particularly useful for staff members who are working in the field, attending events, or visiting project sites. With Power BI Mobile, you can monitor real-time data, track progress, and make informed decisions based on the latest insights, ensuring that you stay connected to your organization's data no matter where you are. 
+  
+  Power BI Report Server: Power BI Report Server is an on-premises solution that allows organizations to host and distribute Power BI reports within their own network infrastructure. It offers similar capabilities to Power BI Service, but the reports and data remain within the organization's environment, providing more control and security.
+  
+  Power BI Gateway: For non-profit organizations that have on-premises data sources or databases, Power BI Gateway enables secure connectivity and data refresh between Power BI Service and the organization's internal systems. This ensures that you can incorporate data from your donor management systems, CRM software, or other internal databases into your Power BI reports and dashboards, providing a comprehensive view of your organization's operations and performance. 
+
+  Power BI Embedded: Power BI Embedded allows non-profit organizations to embed Power BI reports and dashboards directly into their websites or applications. Power BI Embedded allows you to include or embed Power BI reports and dashboards in your own applications (Websites, Portals, CRMs, etc). In addition, it maintains the features of visual analysis and its powerful functionalities. Mainly for software providers, developers or companies that wish to embed reports and dashboards in applications, portals, websites. This feature can be leveraged to provide interactive data visualizations to your website visitors, donors, or program beneficiaries. You can create customized dashboards that highlight your organization's impact, showcase donor contributions, or visualize program outcomes, enhancing transparency and engagement with your stakeholders. 
+
+  Power BI AppSource: Non-profit organizations can explore Power BI AppSource, an online marketplace for finding and downloading pre-built Power BI content packs, templates, and visuals. AppSource offers a range of industry-specific solutions, including non-profit-specific templates, which can help accelerate your reporting and analysis by providing ready-to-use dashboards and reports tailored to the unique needs of non-profit organizations. For more information on please visit: Business Apps – Microsoft AppSource.
+  
+  Data Sources of Power BI are the sources from which data are collected either by importing them or by planting a live service to get the data. Some of the Power BI data sources supported by Power BI include: 
+    File Types like JSON, XML, Excel, txt/CSV, and other Share point folder type files are all supported by Power BI. 
+    Components of Azure like Azure SQL Database, Azure Table Storage, Azure Analysis Services Database (Beta), and many more are all also accepted by Power BI. 
+    Online Services like SharePoint Online List, Power BI Service, Microsoft Exchange Online, Dynamics 365 (online), Salesforce reports, and many more. 
+    Databases of SQL Server Analysis Services, Sybase, Google BidQuery, Snowflake, Oracle, Access, and many more. 
+  
+  Power Pivot: With Power Pivot you can work with large data sets, build extensive relationships, and create complex (or simple) calculations, all in a high-performance environment, and all within the familiar experience of Excel. Power Pivot is data modeling technology that lets you create data models, establish relationships, and create calculations. 
+
+
+  Power View: Power View is a data visualization technology that lets you create interactive charts, graphs, maps, and other visuals that bring your data to life.
+
+ Power Query: Power Query allows you to import data from many different sources and then clean, transform and reshape your data as needed. Power BI imports data from Excel and a variety of other sources. Power Query allows you to search data from various sources such as social media websites, big data, open data, and so on. It also helps in converting this data into an Excel-readable format so that actions such as column or row merging, renaming column title, changing data types etc. can be performed in Excel. This data can then be simply imported into Power BI. 
+
+
+Help - option available in ribbon, includes documenatations, videos, sample files, templates and access to support blogs and communities
+Power BI Blog - pusblishes monthly summaries to showcase new features.
+Microsoft Power BI Youtube Channel - pusblishes demos, feature summaries and advanced tutorials.
+Power BI User Groups (BIUG) - are communities of users, which include both local meetups and helpful online forums.
+
+
+
+In Power BI, there are several connection modes that you can use to connect to your data sources. Please note that connection type is not data sources type.
+
+Power BI supports a variety of data sources. Connection type determines how the connection is established with the data source. A single data source can support multiple connection types. For instance, connecting to a SQL Server database can be done through Import Data or DirectQuery. Despite being the same data source, different connection types offer varied methods of connectivity. 
+
+Import Mode:  
+In this mode, data from the source is imported into Power BI Desktop or Power BI Service. This mode is suitable for small to medium-sized datasets that do not frequently change. It provides fast performance as the data is stored within the Power BI file or dataset. 
+
+This type of connection imports the whole dataset into the memory. This memory will be the memory of the machine that hosts the Power BI dataset. If you have a Power BI dataset opened in Power BI Desktop, then it will be the memory of the machine that Power BI Desktop is running on it. When you publish your Power BI file on the Power BI Service, it will be the memory of that machine in the cloud. 
+
+When you save and close your Power BI file, then that data will be persisted in a *.pbix file. The next time you open the file, data will be loaded again into Analysis Services in-memory engine. 
+
+Pros: 
+Fast performance: Data is imported directly into Power BI, allowing for quick analysis and visualization. 
+Offline access: Once data is imported, reports can be viewed offline without requiring a live connection to the data source. 
+Data shaping: Enables extensive data transformation and modeling within Power BI, allowing for customized analysis. 
+ Cons: 
+Data freshness: Imported data may become stale if it's not regularly refreshed. 
+Data volume limitations: Large datasets may exceed Power BI's memory capacity or performance capabilities. 
+Data security: Imported data resides within Power BI, potentially raising concerns about data governance and compliance. 
+
+DirectQuery Mode:  
+With DirectQuery mode, Power BI sends queries directly to the data source each time a visualization or report is refreshed or interacted with. This mode is suitable for large datasets or scenarios where you need real-time or near real-time access to data. However, it's important to note that performance may be slower compared to Import mode, especially for complex queries or large datasets. 
+
+DirectQuery, as a connection type in Power BI, does not involve loading data into the Power BI model. DirectQuery means that Power BI establishes a direct connection to the data source. Whenever a visualization appears in a report, the data is sourced directly from a query sent to the data source.
+
+Pros: 
+Real-time data access: DirectQuery allows querying data directly from the data source in real-time, ensuring data freshness. 
+Scalability: Suitable for large datasets since it doesn't require importing data into Power BI. 
+Data governance: Maintains a single source of truth as queries are executed directly against the data source. 
+Cons: 
+Performance overhead: DirectQuery can introduce latency, especially for complex queries or large datasets. 
+Limited data transformation: Power BI's data shaping capabilities are restricted compared to Import mode. 
+Data source dependency: Relies heavily on the availability and performance of the data source, which can impact report responsiveness. 
+
+Live Connection Mode:  
+This mode allows you to connect directly to an Analysis Services model, either in Azure Analysis Services or SQL Server Analysis Services. With this mode, Power BI reports connect live to the underlying data model, enabling interactive analysis while leveraging the processing power and optimizations of Analysis Services.
+
+Pros:
+Real-time data access: Similar to DirectQuery, provides real-time access to data without importing it into Power BI.
+Single source of truth: Ensures that reports always reflect the most up-to-date data from the data source.
+Data governance: Maintains data integrity and consistency by querying the original data source. 
+Cons: 
+Performance dependency: Report performance depends on the performance and availability of the data source. 
+Limited functionality: Similar to DirectQuery, certain Power BI features like data modeling and complex calculations are limited. 
+Network latency: Relies heavily on network connectivity, potentially leading to slower report rendering times. 
+ 
+Composite Model:  
+ In Power BI, a composite model entails having some parts of your model connected via DirectQuery to a data source (such as a SQL Server database), while other parts are linked via Import Data (such as an Excel file). 
+
+Introduced in later versions of Power BI, the composite model allows you to combine Import mode and DirectQuery mode within the same model. This enables you to import smaller tables for performance and connect larger or real-time data sources using DirectQuery. This mode is useful for scenarios where you need a balance between performance and real-time access to data.
+
+Pros:
+Hybrid approach: Allows combining Import, DirectQuery, and Live Connection modes within a single model, offering flexibility.
+Scalability and performance: Ideal for scenarios where some data can be imported for performance reasons while maintaining real-time access to other data.
+Data flexibility: Enables leveraging the advantages of different connection modes for different data sources within the same report.
+Cons:
+Complexity: Managing a composite model can be complex, requiring careful consideration of data relationships, refresh schedules, and performance optimizations.
+Resource utilization: May require more resources compared to simpler connection modes, especially when dealing with large datasets or multiple data sources.
+Data governance challenges: Requires a clear understanding of data sources and their respective refresh schedules to maintain data integrity and consistency.
+
+DirectLake:
+The data repository aspect of Microsoft Fabric is known as OneLake, where files are stored in the Parquet format. Microsoft introduced optimizations to the Parquet files within OneLake to greatly enhance their efficiency for VertiPaq querying. As a result, when a Power BI dataset accesses data from OneLake, it can directly query the Parquet files without the need to send SQL queries. This innovation yields outstanding performance akin to importing data, while simultaneously providing real-time access to live data without requiring refreshes. This novel approach to connecting Power BI is dubbed "Direct Lake." 
+
+When data is housed within a Lakehouse within OneLake, Power BI datasets can utilize a specialized connection known as Direct Lake. This connection type combines the speed of an import data connection with the real-time capabilities of a DirectQuery connection. The key lies in bypassing the translation of visual queries into SQL queries that typically run against the SQL endpoint of the Lakehouse; instead, these queries operate directly on Parquet files stored within OneLake. 
